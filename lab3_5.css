@@ -1,0 +1,53 @@
+/* footer{
+    background-color: gray;
+}
+
+noniewiemcos{
+    background-color: aqua;
+    display:  block;
+} */
+
+.container{
+    background: aqua;
+    /* m0-1 */
+    margin: 0 auto;
+    /* w80% */
+    width: 80%;     
+}
+header, footer{
+    background: burlywood;
+    /* w100% */
+    width: 100%;
+    text-align: center;
+    /* mh100 */
+    min-height: 100px;
+}
+menu, section, .adverts{
+    /* mh80% */
+    /* min-height: 80%; */
+    /* mh600 */
+    min-height: 600px;
+    float: left;
+}
+menu, .adverts{
+    width: 15%;
+}
+section{
+    width: 70%;
+}
+menu{
+    background-color: yellow;
+    /* m0 */
+    margin: 0;
+    /* p0 */
+    padding: 0;
+}
+section{
+    background-color: gray;
+}
+.adverts{
+    background-color: brown;   
+}
+footer{
+    clear: both;
+}
