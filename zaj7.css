@@ -1,0 +1,12 @@
+.container{
+    background-color: aqua;
+    font-family: sans-serif;
+    width: 1000px;
+    height: 800px;
+}
+.block{
+    background-color: burlywood;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+}
