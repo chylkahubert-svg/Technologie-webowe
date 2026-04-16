@@ -1,12 +1,29 @@
 .container{
-    background-color: aqua;
+    /* background-color: aqua; */
     font-family: sans-serif;
-    width: 1000px;
-    height: 800px;
+    margin: 20px auto;
+    max-width: 1000px;
+    min-height: 800px;
+    display: flex;
+    /* flex-direction: column; */
+    /* deafult: row */
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* justify-content: space-between;
+    align-content: space-between; */
+    justify-content: center;
+     /*ta sama oś co flex direction  */
+    /* align-content: center; */
+    /* przeciwna oś do flex direction */
+    /* nie ma poziomu ani pionu na kolokwium: żadna odpowiedź */
+    align-content: center;
 }
 .block{
     background-color: burlywood;
+    box-sizing: border-box;
     margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
     width: 300px;
     height: 200px;
 }
