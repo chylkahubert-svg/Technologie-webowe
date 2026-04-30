@@ -76,7 +76,7 @@ left: var(--edge);
 
 .container2{
     position: fixed;
-    bottom: 20px;
+    top: 20px;
 }
 
 
