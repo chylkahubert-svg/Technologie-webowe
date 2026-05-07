@@ -1,0 +1,119 @@
+.container{
+    --block: 100px;
+    --parentw: 1024px;
+    margin: 30px auto;
+    width: var(--parentw);
+    /* border: 2px solid #000; */
+}
+.block{
+    /* border: 2px solid #000; */
+    background-color: #444;
+    color: bisque;
+    width: var(--block);
+    height: var(--block);
+    text-align: center;
+    line-height: var(--block);
+    /* animation: name duration timing-function delay 
+    iteration-count direction fill-mode; */
+    animation: anim 5s 1s linear infinite ;
+     /* esae it out  */
+}
+@keyframes anim { 
+    
+
+    from, to{
+        transform: translateX(0) rotate(0);
+        background-color: #a00;
+        border-radius: 0;
+    }
+    25%, 75%{
+        transform:translateX(calc((var(--parentw) / 2) - (var(--block) ))) rotate(180deg);
+        background-color: #0a0;
+        border-radius: 25%;
+    }
+
+    50%{
+        transform:translateX(calc(var(--parentw) - (var(--block) ))) rotate(360deg);
+        background-color: #00f;
+        border-radius: 50%;
+    }
+    
+} 
+
+.container2{
+    --block2: 100px;
+    --parentw2: 1024px;
+    margin: 30px auto;
+    width: var(--parentw2)
+}
+.block2{
+    color: bisque;
+    width: var(--block2);
+    height: var(--block2);
+    text-align: center;
+    line-height: var(--block2);
+    animation: anim2 5s 1s ease-in-out infinite ;
+}
+@keyframes anim2 {
+    from, to{
+        transform: translateX(0);
+        background-color: peru;
+        border-radius: 50%;
+        
+    }
+    50%{
+        transform:translateX(calc(var(--parentw2) - (var(--block2) )));
+    }
+    
+}
+
+.container3{
+    --block3: 100px;
+    --parentw3: 1024px;
+    margin: 30px auto;
+    width: var(--parentw3);
+}
+.block3{
+    background-color: aquamarine;
+    color: bisque;
+    width: var(--block3);
+    height: var(--block3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: var(--block3);
+    margin: 20px auto;
+    animation: anim3 3s esae infinite;
+    
+}
+@keyframes anim3 {
+    from, to{
+       transform: scale(0.5);
+
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    
+}
+
+
+
+
+/* from {
+        background-color: white;
+    }
+    20%{
+        background-color: chartreuse;
+    }
+    40%{
+        background-color: blueviolet;
+    }
+    60%{
+        background-color: dodgerblue;
+    }
+    80%{
+        background-color: blue;
+    }
+    to {
+        background-color: white;
+    } */
